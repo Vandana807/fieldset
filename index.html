@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            background-color: #eeeeee;
+        }
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <center><img src="https://paytm-travel-mum-akamai.paytm.com/Bus/operatorlogo/tsrtc-logo.jpg" height="200" width="200" alt=""></img></center>
+    <center><h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1></center>
+    <center><h2>GENERAL BUS PASS APPLICATION</h2></center>
+    <form action="./successful.html" target="_blank"  method="get" autocomplete="off">
+       <fieldset style="height:450px; width:700px;">
+        <legend>APPLICANT DETAILS</legend>
+           <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="father name">Father's/Guardian's Name :</label>
+            <input type="text" id="father name" name="father name" required><br><br>
+            <label for="Date of Birth">Date of Birth:</label>
+            <input type="date" id="Date of Birth" name="Date of Birth" required><br><br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"  required><br><br>
+            <label for="Aadhaar">Aadhaar Number:</label>
+            <input type="aadhaar" id="Aadhaar" name="Aadhaar" pattern="\d{4} \d{4} \d{4}" placeholder="1234 5678 9012"maxlength="14" required><br><br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"  maxlength="10" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"  required><br><br>
+            <label for="file">Photo:</label>
+            <input type="file" id="file" name="file"><br><br>
+       </fieldset>
+        <fieldset style="width:700px; height:200px;">
+            <legend>RESIDENTIAL ADDRESS DETAILS</legend>
+            <div style="display: flex; align-items: center;">
+              <label for="Address"> Applicant Address:</label>
+              <textarea id="address" name="Address" rows="3" cols="20"></textarea><br><br>
+              </div>
+              <label for="mandal">Mandal:</label>
+              <select name="mandal" id="mandal">
+                <option>--select--</option>
+                <option value="Veenavanka">Veenavanka</option>
+                <option value="Jammikunta">Jammikunta</option>
+                <option value="Huzurabad">Huzurabad</option>
+            </select><br><br>
+              <label for="district">District:</label>
+              <select name="district" id="district">
+                <option>--select--</option>
+                <option value="Karimnagar">Karimnagar</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Siddipet">Siddipet</option>
+            </select><br><br>
+              <label for="pincode">Pincode:</label>
+              <input type="text" id="pincode" name="pincode" maxlength="6"><br><br>
+        </fieldset>
+        <fieldset style="width:700px; height:100px;">
+            <legend>PASS TYPE DETAILS</legend>
+            <label for="city"> City:</label>
+            <select name="city" id="city">
+                <option>--select--</option>
+                <option value="Karimnagar">Karimnagar</option>
+                <option value="Siddipet">Siddipet</option>
+                <option value="warangal">Warangal</option>
+            </select><br><br>
+            <label for="passtype">Pass Type:</label>
+            <select name="passtype" id="passtype">
+                <option>--select--</option>
+                <option value="monthly pass">monthly pass</option>
+                <option value="yearly pass">yearly pass</option>
+                <option value="ordinary pass">ordinary pass</option>
+            </select>
+        </fieldset>
+        <fieldset style="width:700px; height:150px;">
+            <legend>MODE OF PAYMENT & PASS COLLECTION</legend>
+            <label for="paymentmode">Payment Mode:</label>
+            <select name="paymentmode" id="paymentmode">
+                <option>--select--</option>
+                <option value="Payment At Counter">Payment At Counter</option>
+            </select><br><br>
+            <label for="Pass Delivery Mode">Pass Delivery Mode</label>
+            <select name="Pass Delivery Mode" id="Pass Delivery Mode">
+                <option>--select--</option>
+                <option value="At Counter">At Counter</option>
+            </select><br><br>
+            <label for="collect pass center">Collect Pass Center</label>
+            <select name="collect pass center" id="collect pass center">
+                <option>--select--</option>
+                <option value="Karimnagar bus stand">Karimnagar Bus Stand</option>
+                <option value="KBHP">KBHP</option>
+            </select><br><br>
+            
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
